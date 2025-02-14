@@ -1,0 +1,6 @@
+firebase-admin
+python-dotenv
+langchain
+langchain-openai
+Flask
+Flask-Cors

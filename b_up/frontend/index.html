@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="theme-toggle" class="theme-toggle">🌙</div>
+
+    <div id="profile-container">
+        <img id="avatar" src="y.jpg" alt="User Avatar">
+        <div id="profile-info">
+            <p id="user-name">John Doe</p>
+            <p id="user-email">johndoe@example.com</p>
+        </div>
+    </div>
+
+
+    <nav class="navbar">
+        <a href="chat.html" class="nav-item">Chat with AI</a>
+        <div class="dropdown">
+            <a href="#" class="nav-item">Games</a>
+            <ul class="dropdown-menu">
+                <li><a href="memory-card-game/memory-card.html">Memory Card</a></li>
+                <li><a href="whack-a-mole-game/whack-a-mole.html">Whack-a-Mole!</a></li>
+                <li><a href="simon-says-game/simon-says.html">Simon Says Game</a></li>
+                <li><a href="breakout-game/breakout.html">Break-Out</a></li>
+                <li><a href="tilting-maze-game/tilting-maze.html">Tilting-Maze</a></li>
+                <li><a href="hangman-game/hangman.html">Hangman</a></li>
+                <li><a href="typing-game/typing.html">Typing Game</a></li>
+            </ul>
+        </div>
+        <a href="meditation-app-main/meditation-app.html" class="nav-item">Meditation</a>
+        <a href="forum/forum.html" class="nav-item">Forum</a>
+    </nav>
+    <div class="content">
+        <h1>Welcome to the Platform</h1>
+        <p>Select an option from the navbar to get started.</p>
+    </div>
+    <!-- Auth Container -->
+    <div id="auth-container">
+        <!-- Signup Section -->
+        <div id="signup-section">
+            <h2>Create Account</h2>
+            <input type="email" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button id="signup-btn">Sign Up</button>
+            <p>Already have an account? <button id="switch-to-login">Login</button></p>
+        </div>
+
+        <!-- Login Section -->
+        <div id="login-section" style="display: none;">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p>Don't have an account? <button id="switch-to-signup">Sign Up</button></p>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat-container" style="display: none;">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
